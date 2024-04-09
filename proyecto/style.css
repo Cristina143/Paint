@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+* {
+    cursor: auto;
+}
+
+:root {
+    --light-gray: #f2f0f0;
+    --gray: #e3e3e3;
+    --dark-gray: #919191;
+    --darker-gray: #545454;
+    --logo-blue: #1D4ED8;
+    --darker-blue: #1E40AF;
+    --lighter-blue: #60A5FA;
+    --even-lighter-blue: #90b9f3;
+    --lightest-blue: #DBEAFE;
+    --red: #FF0000;
+    --dark-orange: #ED0707;
+    --light-orange: #f9c56c;
+    --even-lighter-orange: #fcdbb8;
+    --strange-yellow: #dbae2e;
+    --green: #34D399;
+    --light-green: #E6F8DD;
+    --medium-green: #A0C99C;
+    --dark-green: #059669;
+    accent-color: #1D4ED8;
+    accent-color: var(--logo-blue);
+}
+
+body {
+    /*background-image: url(https://files.catbox.moe/wfrobn.png); */
+    background-color: var(--even-lighter-blue);
+    background-attachment: fixed;
+    /*font-family: 'pixelify sans';*/
+    /*font-size: 17px;*/
+    display: flex;
+}
+
+.container{
+    margin: 0 auto;
+    width: 820px;
+    background-color: var(--even-lighter-blue);
+    /*box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;*/
+    /*border: 2px solid #4D23CD;*/
+    height: fit-content;
+    /*text-align: center;*/
+}
+
+.ctx{
+    background-color: white;
+    border:3px solid #1E40AF;
+    cursor: auto;
+}
+
+.formas-container {
+    position:relative;
+    margin: 0 auto;
+    float: right;
+    width: 224px;
+    background-color: var(--even-lighter-blue);
+    /*box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;*/
+    /*border: 1px solid #4D23CD;*/
+    height: fit-content;
+    text-align: center;
+    width: 20rem;
+}
+
+.botones {
+    margin: 0 auto;
+    background-color: white;
+    border:3px solid #1E40AF;
+    width: 21rem;
+    height: fit-content;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 7rem;
+    height: 3rem;
+    text-align: center;
+    background-color: transparent;
+    cursor: auto;
+    margin: 1rem;
+    background-color: var(--logo-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.config-container {
+    /*position:relative;*/
+    margin: 0 auto;
+    float:left;
+    width: 224px;
+    background-color: var(--even-lighter-blue);
+    /*box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;*/
+    /*border: 1px solid #4D23CD;*/
+    height: fit-content;
+    text-align: left;
+}
+
+.datos {
+    margin: 0 auto;
+    background-color: white;
+    border:3px solid #1E40AF;
+    width: 224px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+
+.picbtn {
+    width: 22px;
+    margin: 1rem;
+    cursor: auto;
+}
+
+#grosor{
+    width: 50px;
+}
+
+#sides{
+    width: 50px;
+}

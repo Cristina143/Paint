@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <link rel="shortcut icon" href="./assets/tabicon.png" />
+    
+</head>
+<body>
+    <span class="formas">
+        <div class="formas-container">
+            <div class="botones">
+
+                <div style="padding: 5px; display: grid; grid-template-columns: 33% 33% 33%">
+                    <div class="miniicon" >
+                        <img  class="picbtn" id="un_Btn" src="./fotos/deshacer.png" alt="">
+                    </div>
+                    <div class="miniicon" >
+                        <img style="width: 23px;" id="clr_Btn" class="picbtn" src="./fotos/borrar.png" alt="">
+                    </div>
+                    <div class="miniicon">
+                        <img  class="picbtn" id="re_Btn"  src="./fotos/rehacer.png" alt="">
+                    </div>
+                </div>
+
+                <button class="icon" id="lineaBtn" onclick="event.preventDefault();">Linea</button>
+                <button class="icon" id="textBtn" onclick="event.preventDefault();">Lápiz</button>
+                <button class="icon" id="cuadradoBtn" onclick="event.preventDefault();">Cuadrado</button>
+                <button class="icon" id="rectBtn" onclick="event.preventDefault();">Rectangulo</button>
+                <button class="icon" id="romboBtn" onclick="event.preventDefault();">Rombo</button>
+                <button class="icon" id="trapbtn" onclick="event.preventDefault();">Trapecio</button>
+                <button class="icon" id="circleBtn" onclick="event.preventDefault();">Circulo</button>
+                <button class="icon" id="ovalBtn" onclick="event.preventDefault();">Elipse</button>
+                <button class="icon" id="polybtn" onclick="event.preventDefault();">Poligono</button>
+                <button class="icon" id="moveBtn" onclick="event.preventDefault();">Mover</button>
+                <button class="icon" id="resizeBtn" onclick="event.preventDefault();">Cambiar Tamaño</button>
+                <button class="icon" id="roteBtn" onclick="event.preventDefault();">Rotar</button>
+                <button class="icon" id="deletebtn" onclick="event.preventDefault();">Borrar</button>
+                <button class="icon" id="sendbottom_btn" onclick="event.preventDefault();">Send Bottom</button>
+                <button class="icon" id="sendback_btn" onclick="event.preventDefault();">Send Back</button>
+                <button class="icon" id="sendfront_btn" onclick="event.preventDefault();">Send Front</button>
+                <button class="icon" id="sendup_btn" onclick="event.preventDefault();">Send Up</button>              
+            </div>
+        </div>
+    </span>
+
+    <div class="container">
+        <canvas id="myCanvas" width="700" height="500" class="ctx"></canvas>
+    </div>
+    
+    <span class="config" >
+        <div class="config-container">
+            <div class="datos">
+                <div style="padding: 5px; display: grid; grid-template-columns: 25% 25% 25% 25%;">
+                    <div class="miniicon" id="importBtn">
+                        <img  class="picbtn"  src="./fotos/importar.png" alt="">
+                    </div>
+                    
+                    <div class="miniicon" id="exportBtn"  >
+                        <img  class="picbtn" src="./fotos/exportar.png" alt="">
+                    </div>
+    
+                    <div class="miniicon" id="saveBtn">
+                        
+                        <img style="width: 23px;"  class="picbtn" src="./fotos/png.png" alt="">
+                    </div>
+                    <div class="miniicon" id="convert_to_pdf" >
+                        <img style="width: 23px;"  class="picbtn" src="./fotos/pdf.png" alt="">
+                    </div>
+                </div>
+                <div style="padding: 5px;">
+                    <label for="">Color</label>
+                    <input type="color" id="color">
+                    <label for="">Grosor</label>
+                    <input id="grosor" value="1" min="1" max="100">
+                </div>
+                <div style="padding: 5px;">
+                    
+                </div>
+                <div id="sidefilter" style="padding: 5px; visibility: hidden;" id="sidesbox">
+                    <label for="">Lados</label>
+                    <input id="sides" value="1" min="1" max="100">
+                </div>
+                
+                
+    
+                <div style="padding: 5px; display: grid; grid-template-columns: 50% 50%">
+                    
+                </div>
+            </div>
+        </div>
+    </span>
+
+    <script type="module" src="app.js"></script>
+    
+
+</body>
+</html>
